@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h2>Edit Course</h2>
+  <form method="POST" action="/courses/{{course._id}}?_method=PUT ">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Ten khoa hoc</label>
+      <input type="text" class="form-control" value="{{course.name}}" id="name" name="name" />
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Mo ta khoa hoc</label>
+      <input type="text" class="form-control" value="{{course.description}}" id="description" name="description" />
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Video Id</label>
+      <input type="text" class="form-control" value="{{course.videoId}}"  id="videoId" name="videoId" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
